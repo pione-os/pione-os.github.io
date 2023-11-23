@@ -7,7 +7,7 @@
     <title>PioneOS</title>
 
     <meta name="description"
-        content="PioneOS は、ぶどう島の PioneOS 部が開発したOS。Debian ベースの Linux ディストリビューションであり、安定的で軽快な動作を目指している。">
+        content="PioneOSは、ぶどう島のPioneOS Groupが開発する日本製のDebianベース Linuxディストリビューションです。安定的で軽快な動作を目指しています。">
     <meta name="keywords" content="PioneOS,ぶどう島,PioneOS部,OS,Debian,Linux,ディストリビューション,安定,軽快">
     <meta name="author" content="ぶどう島">
 
@@ -17,7 +17,7 @@
     <meta property="og:image" content="https://ospio.net/images/ogp.png">
     <meta property="og:site_name" content="PioneOS">
     <meta property="og:description"
-        content="PioneOS は、ぶどう島の PioneOS 部が開発したOS。Debian ベースの Linux ディストリビューションであり、安定的で軽快な動作を目指している。">
+        content="PioneOSは、ぶどう島のPioneOS Groupが開発する日本製のDebianベース Linuxディストリビューションです。安定的で軽快な動作を目指しています。">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@gbudou">
     <meta name="theme-color" content="#c866e8">
@@ -25,11 +25,26 @@
     <link rel="stylesheet" href="/styles/main.css">
 
     <style>
-        main section#hello img#laptop {
+        #image {
+            position: relative;
             width: 75%;
             margin: 0 auto;
+        }
+
+        #screen {
+            border-radius: .25em;
+            height: calc(100%/1.5);
+            left: 50%;
+            position: absolute;
+            top: 6%;
+            transform: translateX(-50%);
+        }
+
+        #laptop {
             display: block;
-            filter: drop-shadow(0 .25em .5em var(--shadow-color));
+            margin: 0 auto;
+            width: 100%;
+            max-height: 67vh;
         }
 
         main section#about {
@@ -56,8 +71,10 @@
                 <p class="center" style="font-size: 1.5em;">
                     安定 そして 軽快
                 </p>
-                <img id="laptop" src="/images/laptop.png" alt="Laptop">
-                <img src="screen" alt="">
+                <div id="image">
+                    <img id="screen" src="/images/desktop_screen.png" alt="Screen">
+                    <img id="laptop" src="/images/laptop.png" alt="Laptop">
+                </div>
                 <p class="center">
                     <a href="/download.html" class="button rainbow-hover">PioneOSを入手する</a>
                     <a href="/donate.html" class="button secondary rainbow-hover">開発者を応援する</a>

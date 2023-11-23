@@ -6,7 +6,7 @@
     --link: #146994;
     --header-text: #ffffff;
     --footer-text: #ffffff;
-    --footer-background: #544d5c;
+    --footer-background: var(--theme-color-dark);
     --theme-color: #c866e8;
     --theme-color-dark: #a63f9a;
     --secondary-theme-color: #70c844;
