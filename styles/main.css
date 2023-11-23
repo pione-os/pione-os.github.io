@@ -3,7 +3,7 @@
 :root {
     --background: #fafafa;
     --text: #545454;
-    --link: #67bee9;
+    --link: hsl(200, 75%, 33%);
     --header-text: #ffffff;
     --footer-text: #ffffff;
     --footer-background: #68297d;
