@@ -8,6 +8,16 @@
     --footer-text: #ffffff;
     --footer-background: #544d5c;
     --theme-color: #c866e8;
+    --theme-color-dark: #a63f9a;
+    --secondary-theme-color: #70c844;
+    --secondary-theme-color-dark: #4d9e2b;
+    --dark-background: #f0f0f0;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --shadow-color-light: rgba(0, 0, 0, 0.25);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -37,6 +47,90 @@ a:active {
     text-decoration: underline;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border-radius: 0.25em;
+    background: var(--theme-color);
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+    box-shadow: 0 0 0 0.1em var(--theme-color-dark);
+    border-bottom: 0.1em solid var(--theme-color-dark);
+}
+
+.button.secondary {
+    background: var(--secondary-theme-color);
+    box-shadow: 0 0 0 0.1em var(--secondary-theme-color-dark);
+    border-bottom: 0.1em solid var(--secondary-theme-color-dark);
+}
+
+.button:hover,
+.button:focus {
+    text-decoration: none;
+}
+
+.button:active {
+    border-bottom: 0;
+    background: var(--secondary-theme-color-dark);
+    text-decoration: none;
+}
+
+.button:active.secondary {
+    background: var(--secondary-theme-color-dark);
+}
+
+.center {
+    text-align: center;
+}
+
+.rainbow-hover:hover {
+    animation: rainbow .5s ease-in-out;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card {
+    min-width: 15em;
+    flex: 1;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    background: var(--background);
+    box-shadow: 0 .125em .25em var(--shadow-color-light);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+@keyframes rainbow {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg) brightness(150%);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
 header {
     height: 100vh;
     display: flex;
@@ -52,13 +146,13 @@ header {
 
 header h1 {
     font-size: 4rem;
-    text-shadow: 0 .25em .5em rgba(0, 0, 0, 0.5);
+    text-shadow: 0 .25em .5em var(--shadow-color);
     margin-bottom: 0;
 }
 
 header p {
     font-size: 1.5rem;
-    text-shadow: 0 .25em .5em rgba(0, 0, 0, 0.5);
+    text-shadow: 0 .25em .5em var(--shadow-color);
     margin-top: 0;
 }
 
@@ -70,14 +164,16 @@ main section {
     padding: 2rem 0;
 }
 
+main section .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 main section h2 {
-    margin: 0 10%;
     font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
 main section p {
-    margin: 0 10%;
     font-size: 1rem;
     margin-top: 0;
 }
