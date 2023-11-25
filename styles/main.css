@@ -60,29 +60,27 @@ h6 {
 .button {
     display: inline-block;
     padding: 0.5em 1em;
-    margin: 0 0.5em;
+    margin: 0.25em 0.5em;
     border-radius: 0.25em;
     background: var(--theme-color);
     color: #fff;
     text-decoration: none;
     transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
-    box-shadow: 0 0 0 0.1em var(--theme-color-dark);
-    border-bottom: 0.1em solid var(--theme-color-dark);
+    box-shadow: 0 .25em .5em var(--shadow-color-light);
 }
 
 .button.secondary {
     background: var(--secondary-theme-color);
-    box-shadow: 0 0 0 0.1em var(--secondary-theme-color-dark);
-    border-bottom: 0.1em solid var(--secondary-theme-color-dark);
 }
 
 .button:hover,
 .button:focus {
+    box-shadow: 0 .125em .25em var(--shadow-color-light);
     text-decoration: none;
 }
 
 .button:active {
-    border-bottom: 0;
+    box-shadow: 0 .125em .25em var(--shadow-color-light) inset;
     background: var(--secondary-theme-color-dark);
     text-decoration: none;
 }
