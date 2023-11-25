@@ -81,7 +81,7 @@ h6 {
 
 .button:active {
     box-shadow: 0 .125em .25em var(--shadow-color-light) inset;
-    background: var(--secondary-theme-color-dark);
+    background: var(--theme-color-dark);
     text-decoration: none;
 }
 
