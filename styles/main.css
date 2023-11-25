@@ -61,7 +61,7 @@ h6 {
     display: inline-block;
     padding: 0.5em 1em;
     margin: 0.25em 0.5em;
-    border-radius: 0.25em;
+    border-radius: 0.5em;
     background: var(--theme-color);
     color: #fff;
     text-decoration: none;
