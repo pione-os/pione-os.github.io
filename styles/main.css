@@ -89,6 +89,33 @@ h6 {
     background: var(--secondary-theme-color-dark);
 }
 
+.button-disabled {
+    background: var(--dark-background);
+    color: var(--shadow-color);
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+.button-disabled.secondary {
+    background: var(--dark-background);
+}
+
+.button-disabled:hover,
+.button-disabled:focus {
+    background: var(--dark-background);
+    box-shadow: none;
+    animation: none;
+}
+
+.button-disabled:active {
+    box-shadow: none;
+    background: var(--dark-background);
+}
+
+.button-disabled:active.secondary {
+    background: var(--dark-background);
+}
+
 .center {
     text-align: center;
 }
