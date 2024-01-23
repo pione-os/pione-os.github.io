@@ -157,7 +157,7 @@ h6 {
 }
 
 header {
-    height: 100vh;
+    height: 83vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
