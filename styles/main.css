@@ -69,6 +69,10 @@ h6 {
     box-shadow: 0 .25em .5em var(--shadow-color-light);
 }
 
+.button:visited {
+    color: #fff;
+}
+
 .button.secondary {
     background: var(--secondary-theme-color);
 }
@@ -170,13 +174,13 @@ header {
 }
 
 header h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     text-shadow: 0 .25em .5em var(--shadow-color);
     margin-bottom: 0;
 }
 
 header p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-shadow: 0 .25em .5em var(--shadow-color);
     margin-top: 0;
 }

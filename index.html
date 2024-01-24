@@ -19,6 +19,8 @@
     <meta name="twitter:site" content="@gbudou">
     <meta name="theme-color" content="#c866e8">
 
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="/styles/main.css">
 
     <style>
@@ -51,28 +53,71 @@
         }
 
         #logo {
-            width: 5em;
+            width: 5rem;
             height: auto;
             margin: 0 auto;
             display: block;
         }
 
-        header > div {
+        header>#logo-container {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        header>#buttons {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin-top: 10%;
+        }
+
+        header>*:first-child {
+            margin-top: 10%;
+        }
+
+        header>#more-icon {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3rem;
+            color: var(--text-color);
+            animation: more-icon-animation 1s infinite;
+            text-shadow: 0 .25em .5em var(--shadow-color-light);
+        }
+
+        @keyframes more-icon-animation {
+            0% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(1rem);
+            }
+
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div>
+        <div id="logo-container">
             <img id="logo" src="/images/logo1.svg" alt="logo">
             <h1>PioneOS</h1>
         </div>
         <br>
         <p>Be stable, be nimble, be Pione.</p>
+
+        <div id="buttons">
+            <a href="./get.html" class="button rainbow-hover">PioneOSを入手</a>
+            <a href="https://github.com/pione-os" class="button secondary rainbow-hover">GitHubを見る</a>
+        </div>
+
+        <span id="more-icon" class="material-symbols-rounded">
+            expand_more
+        </span>
     </header>
 
     <!--<nav>
@@ -88,11 +133,11 @@
                     <img id="laptop" src="/images/laptop.png" alt="Laptop">
                 </div>
                 <p class="center">
-                    <a href="./get.html" class="button rainbow-hover">PioneOSを入手する</a>
-                    <a href="https://github.com/pione-os" class="button secondary rainbow-hover">GitHub</a>
+                    <a href="./get.html" class="button rainbow-hover">PioneOSを入手</a>
+                    <a href="https://github.com/pione-os" class="button secondary rainbow-hover">GitHubを見る</a>
                     <!--<a class="button secondary button-disabled">
-                        開発者を応援する-->
-                    </a>
+                        開発者を応援
+                    </a>-->
                 </p>
             </div>
         </section>
