@@ -46,7 +46,7 @@ gpg: 追加する GPG キーの URL
     <install>brave-browser</install>
     <uninstall>chromium</uninstall>
     <icon>brave</icon>
-    <repo>deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main</repo>
+    <repo>deb [signed-by=/usr/share/keyrings/brave-browser.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main</repo>
     <gpg>https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg</gpg>
   </item>
   <item>
@@ -56,8 +56,8 @@ gpg: 追加する GPG キーの URL
     <install>firefox firefox-l10n-ja</install>
     <uninstall>chromium</uninstall>
     <icon>opera</icon>
-    <repo>deb https://deb.opera.com/opera-stable/ stable non-free</repo>
-    <gpg>https://deb.opera.com/archive.key</gpg>
+    <repo>deb [signed-by=/etc/apt/keyrings/firefox.asc] https://packages.mozilla.org/apt mozilla main</repo>
+    <gpg>https://packages.mozilla.org/apt/repo-signing-key.gpg</gpg>
   </item>
   <item>
     <id>6</id>
@@ -66,7 +66,7 @@ gpg: 追加する GPG キーの URL
     <install>floorp</install>
     <uninstall>chromium</uninstall>
     <icon>browser</icon>
-    <repo>deb [signed-by=/usr/share/keyrings/Floorp.gpg] https://ppa.floorp.app/$(ARCH) ./</repo>
+    <repo>deb [signed-by=/usr/share/keyrings/floorp.gpg] https://ppa.floorp.app/$(ARCH) ./</repo>
     <gpg>https://ppa.ablaze.one/KEY.gpg</gpg>
   </item>
 </data>
