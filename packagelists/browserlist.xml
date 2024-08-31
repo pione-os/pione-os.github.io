@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 本データの各項目の説明
 name: インストールするパッケージの表示名
-howto: インストール方法(apt,apt-pub,apt-key,apt-gpg,apt-asc,pacman,sh,appimage,make)
+howto: インストール方法(apt,apt-key,apt-gpg,apt-asc,dpkg,pacman,sh,appimage,make)
 install: インストールするパッケージの名前、何も指定しないなら None
 uninstall: アンインストールするパッケージの名前、何も指定しないなら None
 icon: アイコン ID の指定
 repo: 追加するリポジトリの URL
 gpg: 追加する GPG キーの URL
+url: ダウンロードするファイルの URL
 -->
 <data>
   <item>
     <id>1</id>
     <name>Chrome</name>
-    <howto>apt-pub</howto>
-    <install>google-chrome-stable</install>
+    <howto>dpkg</howto>
+    <install>None</install>
     <uninstall>chromium</uninstall>
     <icon>google-chrome</icon>
-    <repo>deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main</repo>
-    <gpg>https://dl.google.com/linux/linux_signing_key.pub</gpg>
+    <url>https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</url>
   </item>
   <item>
     <id>2</id>
