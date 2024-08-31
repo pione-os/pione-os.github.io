@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 本データの各項目の説明
+name: インストールするパッケージの表示名
+howto: インストール方法(apt,pacman,sh,appimage,make)
+install: インストールするパッケージの名前、何も指定しないなら None
+downloadurl: ダウンロードするファイルの URL、何も指定しないなら None
+uninstall: アンインストールするパッケージの名前、何も指定しないなら None
+icon: アイコン ID の指定
+-->
+<data>
+  <item>
+    <id>1</id>
+    <name>nano</name>
+    <howto>apt</howto>
+    <install>None</install>
+    <uninstall>vim</uninstall>
+    <icon>mousepad</icon>
+  </item>
+  <item>
+    <id>2</id>
+    <name>vim</name>
+    <howto>apt</howto>
+    <install>None</install>
+    <uninstall>nano</uninstall>
+    <icon>vim</icon>
+  </item>
+  <item>
+    <id>3</id>
+    <name>Micro</name>
+    <howto>apt</howto>
+    <install>micro</install>
+    <uninstall>vim nano</uninstall>
+    <icon>micro</icon>
+  </item>
+  <item>
+    <id>4</id>
+    <name>Emacs</name>
+    <howto>apt</howto>
+    <install>emacs</install>
+    <uninstall>vim nano</uninstall>
+    <icon>emacs</icon>
+  </item>
+  <item>
+    <id>5</id>
+    <name>Neovim</name>
+    <howto>apt</howto>
+    <install>neovim</install>
+    <uninstall>vim nano</uninstall>
+    <icon>nvim</icon>
+  </item>
+  <item>
+    <id>6</id>
+    <name>Kakoune</name>
+    <howto>apt</howto>
+    <install>kakoune</install>
+    <uninstall>vim nano</uninstall>
+    <icon>kakoune</icon>
+  </item>
+</data>

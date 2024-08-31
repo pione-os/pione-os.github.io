@@ -6,6 +6,6 @@
     "description": "PioneOSとしての初めてのリリースです。",
     "url": "https://github.com/pione-os/PioneOS_build/releases/download/v0.5/PioneOS_build.zip",
     "date": "2023-12-31",
-    "requirements": ["1コア1GHz以上のamd64互換プロセッサ", "2GB以上のメモリ", "16GB以上のストレージ", "800x600画素以上のディスプレイ解像度", "インターネット接続"]
+    "requirements": ["1GHz以上のx86_64互換プロセッサ", "2GB以上のメモリ", "24GB以上のストレージ", "800x600画素以上のディスプレイ解像度", "インターネット接続"]
   }
 ]
