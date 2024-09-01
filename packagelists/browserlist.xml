@@ -28,7 +28,7 @@ manage: 管理名
     <install>microsoft-edge-stable</install>
     <uninstall>chromium</uninstall>
     <icon>microsoft-edge</icon>
-    <repo>deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main</repo>
+    <repo>"deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main"</repo>
     <gpg>https://packages.microsoft.com/keys/microsoft.asc</gpg>
     <manage>microsoft-edge</manage>
   </item>
@@ -39,7 +39,7 @@ manage: 管理名
     <install>brave-browser</install>
     <uninstall>chromium</uninstall>
     <icon>brave</icon>
-    <repo>deb [signed-by=/usr/share/keyrings/brave-browser.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main</repo>
+    <repo>"deb [signed-by=/usr/share/keyrings/brave-browser.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"</repo>
     <gpg>https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg</gpg>
     <manage>brave-browser</manage>
   </item>
@@ -50,7 +50,7 @@ manage: 管理名
     <install>firefox</install>
     <uninstall>chromium</uninstall>
     <icon>firefox</icon>
-    <repo>deb https://packages.mozilla.org/apt mozilla main</repo>
+    <repo>"deb https://packages.mozilla.org/apt mozilla main"</repo>
     <gpg>https://packages.mozilla.org/apt/repo-signing-key.gpg</gpg>
     <manage>mozilla</manage>
   </item>
@@ -61,7 +61,7 @@ manage: 管理名
     <install>floorp</install>
     <uninstall>chromium</uninstall>
     <icon>browser</icon>
-    <repo>deb [signed-by=/usr/share/keyrings/Floorp.gpg] https://ppa.floorp.app/amd64 ./</repo>
+    <repo>"deb [signed-by=/usr/share/keyrings/Floorp.gpg] https://ppa.floorp.app/amd64 ./"</repo>
     <gpg>https://ppa.ablaze.one/KEY.gpg</gpg>
     <manage>Floorp</manage>
   </item>
