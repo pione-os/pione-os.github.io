@@ -8,6 +8,7 @@ icon: アイコン ID の指定
 repo: 追加するリポジトリの URL
 gpg: 追加する GPG キーの URL
 url: ダウンロードするファイルの URL
+manage: 管理名
 -->
 <data>
   <item>
@@ -18,6 +19,7 @@ url: ダウンロードするファイルの URL
     <uninstall>chromium</uninstall>
     <icon>google-chrome</icon>
     <url>https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</url>
+    <manage>google-chrome</manage>
   </item>
   <item>
     <id>2</id>
@@ -28,45 +30,39 @@ url: ダウンロードするファイルの URL
     <icon>microsoft-edge</icon>
     <repo>deb [arch=amd64] https://packages.microsoft.com/repos/edge stable main</repo>
     <gpg>https://packages.microsoft.com/keys/microsoft.asc</gpg>
+    <manage>microsoft-edge</manage>
   </item>
   <item>
     <id>3</id>
-    <name>Opera</name>
-    <howto>apt-key</howto>
-    <install>opera-stable</install>
-    <uninstall>chromium</uninstall>
-    <icon>opera</icon>
-    <repo>deb https://deb.opera.com/opera-stable/ stable non-free</repo>
-    <gpg>https://deb.opera.com/archive.key</gpg>
-  </item>
-  <item>
-    <id>4</id>
     <name>Brave</name>
-    <howto>apt-gpg</howto>
+    <howto>apt-keyrings</howto>
     <install>brave-browser</install>
     <uninstall>chromium</uninstall>
     <icon>brave</icon>
     <repo>deb [signed-by=/usr/share/keyrings/brave-browser.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main</repo>
     <gpg>https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg</gpg>
+    <manage>brave-browser</manage>
+  </item>
+  <item>
+    <id>4</id>
+    <name>Firefox</name>
+    <howto>apt-asc</howto>
+    <install>firefox</install>
+    <uninstall>chromium</uninstall>
+    <icon>firefox</icon>
+    <repo>deb https://packages.mozilla.org/apt mozilla main</repo>
+    <gpg>https://packages.mozilla.org/apt/repo-signing-key.gpg</gpg>
+    <manage>mozilla</manage>
   </item>
   <item>
     <id>5</id>
-    <name>Firefox</name>
-    <howto>apt-asc</howto>
-    <install>firefox firefox-l10n-ja</install>
-    <uninstall>chromium</uninstall>
-    <icon>opera</icon>
-    <repo>deb [signed-by=/etc/apt/keyrings/firefox.asc] https://packages.mozilla.org/apt mozilla main</repo>
-    <gpg>https://packages.mozilla.org/apt/repo-signing-key.gpg</gpg>
-  </item>
-  <item>
-    <id>6</id>
     <name>Floorp</name>
-    <howto>apt-gpg</howto>
+    <howto>apt-keyrings</howto>
     <install>floorp</install>
     <uninstall>chromium</uninstall>
     <icon>browser</icon>
-    <repo>deb [signed-by=/usr/share/keyrings/floorp.gpg] https://ppa.floorp.app/$(ARCH) ./</repo>
+    <repo>deb [signed-by=/usr/share/keyrings/Floorp.gpg] https://ppa.floorp.app/amd64 ./</repo>
     <gpg>https://ppa.ablaze.one/KEY.gpg</gpg>
+    <manage>Floorp</manage>
   </item>
 </data>
